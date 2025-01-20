@@ -140,7 +140,6 @@ MAIN
     
 END MAIN
 
-Lưu đồ thuật toán:
 
 
 
