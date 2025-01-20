@@ -32,6 +32,7 @@ Giải thuật: Merge Sort
 Mã giả:
 
 FUNCTION mergeSort(head)
+
     IF head = NULL OR head.next = NULL THEN
         RETURN head
 
@@ -48,6 +49,7 @@ FUNCTION mergeSort(head)
 END FUNCTION
 
 FUNCTION splitList(source, frontRef, backRef)
+
     IF source = NULL OR source.next = NULL THEN
         frontRef = source
         backRef = NULL
@@ -72,6 +74,7 @@ FUNCTION splitList(source, frontRef, backRef)
 END FUNCTION
 
 FUNCTION mergeSortedLists(a, b)
+
     IF a = NULL THEN
         RETURN b
     IF b = NULL THEN
@@ -87,17 +90,21 @@ FUNCTION mergeSortedLists(a, b)
     END IF
 
     RETURN result
+    
 END FUNCTION
 
 FUNCTION printList(head)
+
     WHILE head != NULL DO
         PRINT head.data, " → "
         head = head.next
     END WHILE
     PRINT "NULL"
+    
 END FUNCTION
 
 FUNCTION append(headRef, data)
+
     CREATE newNode WITH data
     IF headRef = NULL THEN
         headRef = newNode
@@ -108,9 +115,11 @@ FUNCTION append(headRef, data)
         temp = temp.next
     END WHILE
     temp.next = newNode
+    
 END FUNCTION
 
 MAIN
+
     DECLARE head = NULL
     INPUT n // So luong phan tu cua danh sach
     IF n <= 0 THEN
@@ -128,6 +137,7 @@ MAIN
     // In danh sach lien ket da sap xep
     PRINT "Danh sach lien ket da sap xep:"
     CALL printList(head)
+    
 END MAIN
 
 Lưu đồ thuật toán:
